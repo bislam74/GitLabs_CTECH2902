@@ -20,13 +20,52 @@ namespace ErrorProneWebsite.Models
         /// <para>So at the very least some error handling needs to happen here...</para>
         /// </summary>
         /// <returns>The contents of the file from the file path as a string.</returns>
+        
+        //THIS IS UPTO THE POINT OF HANDLING ERRORS FROM THE ERROR LAB DOCUMENT
 
         public string GetContent()
         {
+            string contentMessage = String.Empty;
+            //StreamReader streamReader = null;
 
-            StreamReader streamReader = new StreamReader(_contentFilePath);
+            try
 
-            return streamReader.ReadToEnd();
+            {
+                using (StreamReader streamReader = new StreamReader(_contentFilePath))
+                {
+                    contentMessage = streamReader.ReadToEnd();
+                }
+            }
+            catch (FileNotFoundException fnfEx)
+            {
+                contentMessage = String.Format("{0}{1}{2}",
+              "Oops! The content could not be found at the location specified.",
+              Environment.NewLine, fnfEx.Message);
+            }
+
+            catch (Exception ex)
+            {
+                contentMessage = String.Format("{0}{1}{2}",
+              "Blimey! Something totally unexpected just happened!",
+              Environment.NewLine, ex.Message);
+            }
+            /*finally
+            {
+                //if (streamReader != null)
+                streamReader.Close();
+            }*/
+            return contentMessage;
         }
+
+
+     /*
+
+        return contentMessage;*/
+
+
+        //StreamReader streamReader = new StreamReader(_contentFilePath);
+
+        //return streamReader.ReadToEnd();
     }
 }
+
