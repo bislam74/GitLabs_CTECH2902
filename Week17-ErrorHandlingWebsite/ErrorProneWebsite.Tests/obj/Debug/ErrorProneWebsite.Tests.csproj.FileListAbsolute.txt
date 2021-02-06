@@ -1,0 +1,11 @@
+D:\Advanced programming- Jai\GitLabs_CTECH2902\Week17-ErrorHandlingWebsite\ErrorProneWebsite.Tests\bin\Debug\ErrorProneWebsite.Tests.dll
+D:\Advanced programming- Jai\GitLabs_CTECH2902\Week17-ErrorHandlingWebsite\ErrorProneWebsite.Tests\bin\Debug\ErrorProneWebsite.Tests.pdb
+D:\Advanced programming- Jai\GitLabs_CTECH2902\Week17-ErrorHandlingWebsite\ErrorProneWebsite.Tests\bin\Debug\ErrorProneWebsite.dll
+D:\Advanced programming- Jai\GitLabs_CTECH2902\Week17-ErrorHandlingWebsite\ErrorProneWebsite.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Advanced programming- Jai\GitLabs_CTECH2902\Week17-ErrorHandlingWebsite\ErrorProneWebsite.Tests\bin\Debug\ErrorProneWebsite.pdb
+D:\Advanced programming- Jai\GitLabs_CTECH2902\Week17-ErrorHandlingWebsite\ErrorProneWebsite.Tests\bin\Debug\ErrorProneWebsite.dll.config
+D:\Advanced programming- Jai\GitLabs_CTECH2902\Week17-ErrorHandlingWebsite\ErrorProneWebsite.Tests\obj\Debug\ErrorProneWebsite.Tests.csprojAssemblyReference.cache
+D:\Advanced programming- Jai\GitLabs_CTECH2902\Week17-ErrorHandlingWebsite\ErrorProneWebsite.Tests\obj\Debug\ErrorProneWebsite.Tests.csproj.CoreCompileInputs.cache
+D:\Advanced programming- Jai\GitLabs_CTECH2902\Week17-ErrorHandlingWebsite\ErrorProneWebsite.Tests\obj\Debug\ErrorProneWebsite.Tests.csproj.CopyComplete
+D:\Advanced programming- Jai\GitLabs_CTECH2902\Week17-ErrorHandlingWebsite\ErrorProneWebsite.Tests\obj\Debug\ErrorProneWebsite.Tests.dll
+D:\Advanced programming- Jai\GitLabs_CTECH2902\Week17-ErrorHandlingWebsite\ErrorProneWebsite.Tests\obj\Debug\ErrorProneWebsite.Tests.pdb

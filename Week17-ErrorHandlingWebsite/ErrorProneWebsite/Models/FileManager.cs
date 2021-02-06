@@ -39,39 +39,11 @@ namespace ErrorProneWebsite.Models
                 contentMessage = streamReader.ReadToEnd();
             }
             return contentMessage;
-            /*try
 
-            {
-                outcomeOfAddingContent = contentManager.GetContent();
-            }
-            catch (Exception ex)
-            {
-                outcomeOfAddingContent = ex.Message;
-            }
-
-            /*catch (Exception ex)
-            {
-                contentMessage = String.Format("{0}{1}{2}",
-              "Blimey! Something totally unexpected just happened!",
-              Environment.NewLine, ex.Message);
-            }
-            finally
-            {
-                lblContent.Text = outcomeOfAddingContent;
-            }*/
-           //
         }
 
 
 
-
-        /*
-        return contentMessage;*/
-
-
-        //StreamReader streamReader = new StreamReader(_contentFilePath);
-
-        //return streamReader.ReadToEnd();
-    }
+    }   
 }
 
