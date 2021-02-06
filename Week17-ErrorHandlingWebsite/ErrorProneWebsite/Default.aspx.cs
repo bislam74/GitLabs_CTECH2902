@@ -14,7 +14,7 @@ namespace ErrorProneWebsite
         protected void Page_Load(object sender, EventArgs e)
         {
             // The first two lines find and set the name of the directory and file that the content is stored in
-            
+
             string appDataDirectory = Server.MapPath("/App_Data");
 
             string contentFilePath = string.Format(@"{0}\{1}", appDataDirectory, "Content.txt");
@@ -25,8 +25,23 @@ namespace ErrorProneWebsite
 
             // The text property of the label contained in the ASPX file is set with the content returned by the FileManager 
 
-            lblContent.Text = contentManager.GetContent();
+            //lblContent.Text = contentManager.GetContent();
 
+            string outcomeOfAddingEvenMoreContent = String.Empty;
+
+            try
+            {
+                outcomeOfAddingEvenMoreContent = contentManager.GetEvenMoreContent();
+            }
+            catch (Exception ex)
+            {
+                outcomeOfAddingEvenMoreContent = ex.Message;
+            }
+            finally
+            {
+                lblEvenMoreContent.Text = outcomeOfAddingEvenMoreContent;
+
+            }
         }
     }
 }

@@ -15,7 +15,7 @@ namespace ErrorProneWebsite.Tests
         {
             FileManager fileManager = new FileManager(TEST_FILE_PATH);
 
-            Assert.AreEqual("Here is some test content.", fileManager.GetContent());
+            Assert.AreEqual("Here is some test content.", fileManager.GetEvenMoreContent());
 
 
         }

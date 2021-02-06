@@ -20,46 +20,52 @@ namespace ErrorProneWebsite.Models
         /// <para>So at the very least some error handling needs to happen here...</para>
         /// </summary>
         /// <returns>The contents of the file from the file path as a string.</returns>
-        
-        //THIS IS UPTO THE POINT OF HANDLING ERRORS FROM THE ERROR LAB DOCUMENT
+        /// 
+        //COMPLETION OF THROWING ERRORS
 
-        public string GetContent()
+        public string GetEvenMoreContent()
         {
             string contentMessage = String.Empty;
             //StreamReader streamReader = null;
 
-            try
-
+            if (!File.Exists(_contentFilePath))
             {
-                using (StreamReader streamReader = new StreamReader(_contentFilePath))
-                {
-                    contentMessage = streamReader.ReadToEnd();
-                }
-            }
-            catch (FileNotFoundException fnfEx)
-            {
-                contentMessage = String.Format("{0}{1}{2}",
-              "Oops! The content could not be found at the location specified.",
-              Environment.NewLine, fnfEx.Message);
+                throw new FileNotFoundException
+              ("The content file does not exist in the location specified...");
             }
 
+            using (StreamReader streamReader = new StreamReader(_contentFilePath))
+            {
+                contentMessage = streamReader.ReadToEnd();
+            }
+            return contentMessage;
+            /*try
+
+            {
+                outcomeOfAddingContent = contentManager.GetContent();
+            }
             catch (Exception ex)
+            {
+                outcomeOfAddingContent = ex.Message;
+            }
+
+            /*catch (Exception ex)
             {
                 contentMessage = String.Format("{0}{1}{2}",
               "Blimey! Something totally unexpected just happened!",
               Environment.NewLine, ex.Message);
             }
-            /*finally
+            finally
             {
-                //if (streamReader != null)
-                streamReader.Close();
+                lblContent.Text = outcomeOfAddingContent;
             }*/
-            return contentMessage;
+           //
         }
 
 
-     /*
 
+
+        /*
         return contentMessage;*/
 
 
